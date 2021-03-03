@@ -1,7 +1,7 @@
-let yeah_boiiiiii = 0
+let testing = 0
 radio.onReceivedNumber(function (receivedNumber) {
-    yeah_boiiiiii = 1
-    while (yeah_boiiiiii == 1) {
+    testing = 1
+    while (testing == 1) {
         basic.showLeds(`
             # # # # #
             # # # # #
@@ -16,7 +16,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     basic.clearScreen()
 })
 input.onButtonPressed(Button.A, function () {
-    yeah_boiiiiii = 0
+    testing = 0
 })
 input.onGesture(Gesture.Shake, function () {
     radio.sendNumber(0)
